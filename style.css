@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 15px;
+}
+
+button.tab-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #4caf50;
+    color: #fff;
+    transition: 0.3s;
+}
+
+button.tab-btn:hover {
+    background: #45a049;
+}
+
+.game-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.game-container.active {
+    display: flex;
+}
+
+.container, .quiz-container, .guess-game {
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    margin: auto;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cell:hover { background: rgba(255,255,255,0.3); transform: scale(1.05);}
+.cell.taken { cursor: not-allowed;}
+
+.quiz-container .question { font-size: 1.2em; margin-bottom: 20px; }
+.quiz-container .options { display: flex; flex-direction: column; gap: 10px; }
+.quiz-container .option {
+    padding: 10px;
+    background: rgba(255,255,255,0.25);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+.quiz-container .option:hover { background: rgba(255,255,255,0.45); }
+.quiz-container .option.correct { background: #4caf50; color: #fff; }
+.quiz-container .option.wrong { background: #f44336; color: #fff; }
+.quiz-container .message { margin-top: 15px; font-size: 1.1em; }
+#nextBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#nextBtn:hover { background: #2980b9; }
+
+.guess-game input {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.guess-game button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.guess-game button:hover { background: #45a049; }
+.guess-game .message { margin-top: 15px; font-size: 1.1em; }
+.guess-game .success { color: #ffeb3b; font-weight: bold; }
+
+.signature { margin-top: 20px; font-size: 0.85em; opacity: 0.8;}
+.signature span { color: #ffeb3b; font-weight: bold; }
+
+button {
+    padding: 10px 20px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+button:hover { background: #45a049; }

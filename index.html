@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Collection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <button class="tab-btn" onclick="showGame('xo')">XO Game</button>
+    <button class="tab-btn" onclick="showGame('quiz')">Quiz Game</button>
+    <button class="tab-btn" onclick="showGame('guess')">Number Guess</button>
+</header>
+
+<div id="xo" class="game-container active">
+    <div class="container">
+        <h1>XO Game</h1>
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="message" id="messageXO">Player X's turn</div>
+        <button onclick="resetXO()">Restart</button>
+        <div class="signature">© 2025 — Developed by <span>@Alhomaidi</span></div>
+    </div>
+</div>
+
+<div id="quiz" class="game-container">
+    <div class="quiz-container">
+        <h1>🎓 Quiz Game</h1>
+        <div class="question" id="question">Loading question...</div>
+        <div class="options" id="options"></div>
+        <div class="message" id="messageQuiz"></div>
+        <button id="nextBtn" onclick="nextQuestion()">Next Question</button>
+        <div class="signature">© 2025 — Developed by <span>@Alhomaidi</span></div>
+    </div>
+</div>
+
+<div id="guess" class="game-container">
+    <div class="guess-game">
+        <h1>🎯 Number Guess</h1>
+        <p>Guess a number from 1 to 100</p>
+        <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess">
+        <br>
+        <button onclick="checkGuess()">Check</button>
+        <div class="message" id="messageGuess"></div>
+        <button onclick="resetGuess()">Restart</button>
+        <div class="signature">© 2025 — Developed by <span>@Alhomaidi</span></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
