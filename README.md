@@ -13,7 +13,7 @@ A fun, interactive web app featuring three classic games built with pure HTML, C
 - 🎲 Randomized Quiz questions for every round.
 
 ## 🔗 Live Demo
-[Play Now!](https://alhomaidi1.github.io/Game-Collection/)
+[Play Now!](https://Alhomaidi3.github.io/Game-Collection/)
 
 ---
 
@@ -26,6 +26,6 @@ MIT License
 ## 💡 Author
 
 **Abdulrahman Alhomaidi**  
-GitHub: [https://github.com/Alhomaidi1](https://github.com/Alhomaidi1)  
-LinkedIn: [https://www.linkedin.com/in/abdulrahman-alhomaidi](https://www.linkedin.com/in/abdulrahman-alhomaidi)
+GitHub: [https://github.com/Alhomaidi3](https://github.com/Alhomaidi3)  
+LinkedIn: [https://www.linkedin.com/in/Alhomaidi3](https://www.linkedin.com/in/Alhomaidi3)
 ```
